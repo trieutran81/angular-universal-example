@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node dist/server/main.js",
+    "build": "ng build --prod && ng run angular.io-example:server:production",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
